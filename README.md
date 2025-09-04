@@ -288,8 +288,8 @@ Projemiz, yalnızca bir hackathon prototipi değil; aynı zamanda **gerçek haya
 ## 📄 Lisans Bilgisi
 
 Bu proje **lisanslı bir teknolojidir**.  
-Geliştirilen tüm donanım ve yazılım bileşenleri, Astrosit Teknoloji A.Ş. ve SmellControl girişimi bünyesinde tescillenmiştir.
+Geliştirilen tüm donanım ve yazılım bileşenleri, **Astrosit takımı** bünyesinde tescillenmiştir.
 
 Lütfen detaylı lisans koşulları ve kullanım izinleri için proje içerisindeki `LICENSE.md` dosyasını inceleyiniz.  
-Ticari kullanım ve iş birliği talepleri için: [iletisim@astrosit.com](mailto:iletisim@astrosit.com)
+Ticari kullanım ve iş birliği talepleri için ulaşabilirsiniz .
 
