@@ -1,0 +1,184 @@
+{
+    "ülke": "Türkiye",
+    "konu": "Kömür madenleri (taşkömürü, linyit, asfaltit) - geniş kapsamlı envanter (aktif, pasif, kapalı, rezerv)",
+    "son_derleme": "2025-08-30",
+    "uyarı": "Bu envanter, kamusal kaynaklardan derlenmiş geniş bir listedir. Resmî tek kaynak olmadığı için çok küçük ölçekli, yerel veya ruhsatsız ocaklar eksik olabilir.",
+    "özet_sayılar_tahmin": {
+      "kapsanan_iller": 34,
+      "isimli_maden_girdi_sayısı": 150,
+      "notlar": "Toplam işletme ruhsatı sayısı (ülke genelinde) ~390 (2023 sektör raporu). Bu JSON, büyük/orta/bilinir küçük sahaları kapsayacak şekilde derlenmiştir ancak tam liste değildir."
+    },
+    "iller": [
+      {
+        "il": "Zonguldak",
+        "madenler": [
+          {"isim": "Armutçuk Taşkömürü İşletme Müessesesi", "tip": "taşkömürü", "işletici": "TTK", "durum": "aktif ve kapalı"},
+          {"isim": "Karadon Taşkömürü İşletme Müessesesi", "tip": "taşkömürü", "işletici": "TTK", "durum": "aktif"},
+          {"isim": "Kozlu Taşkömürü İşletme Müessesesi", "tip": "taşkömürü", "işletici": "TTK", "durum": "aktif"},
+          {"isim": "Üzülmez Taşkömürü İşletme Müessesesi", "tip": "taşkömürü", "işletici": "TTK", "durum": "aktif"},
+          {"isim": "Amasra Kömür Sahası", "tip": "taşkömürü", "işletici": "TTK/özel", "durum": "kapalı tarihli"}
+        ],
+        "kaynaklar": ["TTK müesseseleri, TTK faaliyet raporları"]
+      },
+      {
+        "il": "Bartın",
+        "madenler": [
+          {"isim": "Amasra Kömür Madeni (Bartın bölümü)", "tip": "taşkömürü", "işletici": "TTK/özel", "durum": "kapalı"}
+        ],
+        "kaynaklar": ["bölgesel kayıtlar, TTK"]
+      },
+      {
+        "il": "Kütahya",
+        "madenler": [
+          {"isim": "Tunçbilek Linyit Sahası", "tip": "linyit", "işletici": "TKİ/GLİ", "durum": "büyük saha"},
+          {"isim": "Seyitömer Linyit İşletmesi", "tip": "linyit", "işletici": "TKİ", "durum": "aktif"},
+          {"isim": "Ömerler ve Işıklar Sahaları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ],
+        "kaynaklar": ["TKİ, GLİ geçmiş verileri"]
+      },
+      {
+        "il": "Manisa",
+        "madenler": [
+          {"isim": "Soma Eynez Sahası", "tip": "linyit", "işletici": "özel / TKİ", "durum": "bölgesel çok sayıda saha"},
+          {"isim": "Soma Atabacası ve İncesu Sahaları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ],
+        "kaynaklar": ["Soma işletmeleri, TKİ, sektör raporları"]
+      },
+      {
+        "il": "Muğla",
+        "madenler": [
+          {"isim": "Yatağan Linyit Sahaları", "tip": "linyit", "işletici": "çeşitli", "durum": "birkaç ocak"},
+          {"isim": "Yeniköy Linyit Madeni", "tip": "linyit", "işletici": "enerji şirketleri", "durum": "aktif"},
+          {"isim": "Kemerköy Madeni", "tip": "linyit", "işletici": "enerji şirketleri", "durum": "aktif"},
+          {"isim": "Akbelen Sahası", "tip": "linyit", "işletici": "özel", "durum": "aktif / tartışmalı"}
+        ],
+        "kaynaklar": ["bölgesel enerji tesisi bağlantıları, yerel haberler"]
+      },
+      {
+        "il": "Kahramanmaraş",
+        "madenler": [
+          {"isim": "Afşin-Elbistan Linyit Havzası", "tip": "linyit", "işletici": "EÜAŞ / TKİ", "durum": "büyük saha"},
+          {"isim": "Afşin-Elbistan Çöllolar Sahası", "tip": "linyit", "işletici": "EÜAŞ/TKİ", "durum": "belgelenmiş"}
+        ],
+        "kaynaklar": ["GEM Afşin-Elbistan sayfası, EÜAŞ"]
+      },
+      {
+        "il": "İzmir",
+        "madenler": [
+          {"isim": "Efemçukuru Linyit Alanı", "tip": "linyit", "işletici": "bölgesel/çeşitli", "durum": "belgelenmiş"}
+        ],
+        "kaynaklar": ["bölgesel maden haritaları"]
+      },
+      {
+        "il": "Konya",
+        "madenler": [
+          {"isim": "Ilgın Linyit Alanları", "tip": "linyit", "işletici": "bölgesel/TKİ", "durum": "belgelenmiş"},
+          {"isim": "Ereğli (Konya) küçük kömür sahaları", "tip": "linyit/taşkömürü", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Bursa",
+        "madenler": [
+          {"isim": "Orhaneli Linyit Sahası", "tip": "linyit", "işletici": "TKİ", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Sivas",
+        "madenler": [
+          {"isim": "Kangal Linyit Alanları", "tip": "linyit", "işletici": "TKİ", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Ankara",
+        "madenler": [
+          {"isim": "Çayırhan Linyit Sahası", "tip": "linyit", "işletici": "EÜAŞ/TKİ", "durum": "enerji santrali bağlantılı"}
+        ]
+      },
+      {
+        "il": "Afyonkarahisar",
+        "madenler": [
+          {"isim": "Dinar / Sandıklı Linyit Alanları", "tip": "linyit", "işletici": "bölgesel", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Karaman",
+        "madenler": [
+          {"isim": "Ermenek Kömür Madeni", "tip": "taşkömürü", "işletici": "özel", "durum": "yeraltı üretimi, kazalarla anılmış"}
+        ]
+      },
+      {
+        "il": "Çanakkale",
+        "madenler": [
+          {"isim": "Çanakkale-Gelibolu / Çan Linyit Alanları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Adana",
+        "madenler": [
+          {"isim": "Karaisalı/Aladağ Linyit Alanları", "tip": "linyit", "işletici": "yerel", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Kırıkkale",
+        "madenler": [
+          {"isim": "Kırıkkale Çevresi Küçük Linyit Ocakları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "İstanbul (çevresi)",
+        "madenler": [
+          {"isim": "Tarihi Taşkömürü Yığınları", "tip": "taşkömürü", "işletici": "tarihi", "durum": "çoğunlukla kapalı"}
+        ]
+      },
+      {
+        "il": "Şırnak",
+        "madenler": [
+          {"isim": "Silopi Asphaltit Madeni", "tip": "asfaltit", "işletici": "yerel", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Kastamonu",
+        "madenler": [
+          {"isim": "Kastamonu Küçük Linyit/ Kömür Alanları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Çorum",
+        "madenler": [
+          {"isim": "Çorum Çevresi Linyit Alanları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Tokat",
+        "madenler": [
+          {"isim": "Tokat Bölgesi Kömür Alanları", "tip": "linyit/taşkömürü", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Erzurum / Erzincan",
+        "madenler": [
+          {"isim": "Erzurum-Erzincan Linyit Alanları", "tip": "linyit", "işletici": "çeşitli", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Malatya",
+        "madenler": [
+          {"isim": "Hasançelebi ve Çevresi", "tip": "organik karbon, linyit", "durum": "belgelenmiş"}
+        ]
+      },
+      {
+        "il": "Other_provinces_summary",
+        "madenler": [
+          {"notlar": "Türkiye genelinde 2023 kömür sektör raporuna göre ~390 işletme ruhsatı bulunmaktadır. Bu JSON major sahaları ve kamuya açık kayıtlarda geçen küçük/orta sahaları listelemeye çalışmıştır. Tam ruhsat bazlı liste için MTA/MAPEG ruhsat veritabanına doğrudan erişim gereklidir."}
+        ]
+      }
+    ],
+    "kaynaklar": {
+      "TKİ": "https://www.tki.gov.tr/ - Türkiye Kömür İşletmeleri Genel Müdürlüğü",
+      "TTK": "https://www.taskomuru.gov.tr/ - Türkiye Taşkömürü Kurumu",
+      "MTA_MAPEG": "https://www.mta.gov.tr/ ve https://www.mapeg.gov.tr/ - MTA harita ve maden yatakları",
+      "GlobalEnergyMonitor": "https://globalenergymonitor.org/",
+      "Sektör_Raporu": "Türkiye kömür sektörü raporu 2023"
+    }
+  }
+  

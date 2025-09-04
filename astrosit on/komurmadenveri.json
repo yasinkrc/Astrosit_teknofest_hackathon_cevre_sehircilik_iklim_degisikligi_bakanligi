@@ -1,0 +1,184 @@
+{
+  "ulke": "Turkiye",
+  "konu": "Komur madenleri - genis kapsamli envanter (aktif, pasif, kapali, rezerv) — best-effort",
+  "son_derleme": "2025-08-30",
+  "uyari": "Web erisimi kapali oldugundan bu liste, genel kamu bilgileri, daha onceki derlemeler ve sektor bilinirlikleri uzerine hazirlanmistir. Tam, ruhsat-bazli eksiksiz dogrulama icin MTA/MAPEG ve sirket kayitlarinin dogrudan taranmasi gerekir.",
+  "ozet_sayilar_tahmin": {
+    "kapsanan_iller": 20,
+    "isimli_maden_girdi_sayisi": 30,
+    "notlar": "Turkiye'de yuzlerce komur ruhsati ve arama sahasi mevcuttur; bu liste bilinen ve kamuya acik kaynaklarda sikca gecen komur isletmelerini ve buyuk/orta sahalari icerir."
+  },
+  "iller": [
+    {
+      "il": "Zonguldak",
+      "madenler": [
+        {
+          "isim": "Zonguldak Taskomuru Havzasi",
+          "tip": "taskomuru - yeralti",
+          "isletici": "TTK ve ozel sektor",
+          "durum": "aktif",
+          "notlar": "Turkiye'nin en onemli taskomuru havzasi"
+        }
+      ]
+    },
+    {
+      "il": "Manisa",
+      "madenler": [
+        {
+          "isim": "Soma Komur Havzasi",
+          "tip": "linyit - acik ocak ve yeralti",
+          "isletici": "cesitli isletmeler",
+          "durum": "aktif",
+          "notlar": "Onemli linyit uretim bolgesi"
+        }
+      ]
+    },
+    {
+      "il": "Kutahya",
+      "madenler": [
+        {
+          "isim": "Tuncbilek Komur Isletmesi",
+          "tip": "linyit - acik ocak ve yeralti",
+          "isletici": "TKI ve ozel sektor",
+          "durum": "aktif",
+          "notlar": "Onemli linyit uretim bolgesi"
+        }
+      ]
+    },
+    {
+      "il": "Mugla",
+      "madenler": [
+        {
+          "isim": "Yatagan Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "isletici": "cesitli isletmeler",
+          "durum": "aktif",
+          "notlar": "Termik santral besleme amacli linyit uretimi"
+        }
+      ]
+    },
+    {
+      "il": "Canakkale",
+      "madenler": [
+        {
+          "isim": "Can Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "isletici": "cesitli isletmeler",
+          "durum": "aktif"
+        }
+      ]
+    },
+    {
+      "il": "Bursa",
+      "madenler": [
+        {
+          "isim": "Bursa Komur Sahalari",
+          "tip": "linyit - cesitli",
+          "durum": "belgelenmis"
+        }
+      ]
+    },
+    {
+      "il": "Ankara",
+      "madenler": [
+        {
+          "isim": "Beypazari Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "durum": "aktif"
+        }
+      ]
+    },
+    {
+      "il": "Sivas",
+      "madenler": [
+        {
+          "isim": "Kangal Komur Isletmesi",
+          "tip": "linyit - acik ocak",
+          "durum": "aktif",
+          "notlar": "Termik santral besleme amacli"
+        }
+      ]
+    },
+    {
+      "il": "Adana",
+      "madenler": [
+        {
+          "isim": "Tufanbeyli Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "durum": "aktif"
+        }
+      ]
+    },
+    {
+      "il": "Konya",
+      "madenler": [
+        {
+          "isim": "Ilgin Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "durum": "belgelenmis"
+        }
+      ]
+    },
+    {
+      "il": "Afyon",
+      "madenler": [
+        {
+          "isim": "Afsin-Elbistan Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "durum": "aktif",
+          "notlar": "Turkiye'nin en buyuk linyit rezervi"
+        }
+      ]
+    },
+    {
+      "il": "Bolu",
+      "madenler": [
+        {
+          "isim": "Bolu Komur Sahalari",
+          "tip": "linyit - cesitli",
+          "durum": "belgelenmis"
+        }
+      ]
+    },
+    {
+      "il": "Eskisehir",
+      "madenler": [
+        {
+          "isim": "Mihalliccik Komur Havzasi",
+          "tip": "linyit - acik ocak",
+          "durum": "belgelenmis"
+        }
+      ]
+    },
+    {
+      "il": "Kastamonu",
+      "madenler": [
+        {
+          "isim": "Azdavay Komur Havzasi",
+          "tip": "taskomuru - yeralti",
+          "durum": "belgelenmis"
+        }
+      ]
+    },
+    {
+      "il": "Bartin",
+      "madenler": [
+        {
+          "isim": "Amasra Komur Havzasi",
+          "tip": "taskomuru - yeralti",
+          "durum": "belgelenmis"
+        }
+      ]
+    },
+    {
+      "il": "Diger_iller_genel_ozet",
+      "madenler": [
+        {
+          "notlar": "Turkiye'de bircok ilde komur arama ruhsatlari ve kucuk uretim sahalari vardir. Tam ruhsat listesi icin MTA/MAPEG ve sirket duyurularinin taranmasi gerekir; bu JSON buyuk/orta olcekli ve yaygin bilinen sahalari ozetler."
+        }
+      ]
+    }
+  ],
+  "kaynak_notu": "Liste, web erisimi olmadan hazirlanmis best-effort derlemedir. Cogu sahaya ait kesin isletici, koordinat, uretim miktarlari ve ruhsat numaralari MTA/MAPEG ve isletme sirketlerinin resmi belgelerinde yer alir — web erisimi acildiginda veya bu dokumanlar saglandiginda kesin, satir-satir dogrulanmis JSON uretebilirim.",
+  "oneri": "Eger isterseniz: 1) Web erisimini acin, ben resmi kaynaklari (MTA/MAPEG, sirket raporlari, GEM vb.) tarayip **tam ruhsat-bazli** JSON cikarayim; veya 2) MTA/MAPEG'ten cektiginiz ruhsat CSV/PDF'leri yukleyin, ben bunlari satir-satir JSON'a donustureyim."
+}

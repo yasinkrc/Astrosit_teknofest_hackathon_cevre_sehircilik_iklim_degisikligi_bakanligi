@@ -1,0 +1,133 @@
+<div class="app-container">
+  <div class="content-wrapper">
+    <!-- Controls section -->
+    <div class="controls-section">
+      <div class="dropdown">
+        <label for="mineTypeSelect">Maden Turu:</label>
+        <select id="mineTypeSelect" [(ngModel)]="selectedMineType" (change)="onMineTypeChange($event)">
+          <option value="gold">Altın Madenleri</option>
+          <option value="coal">Kömür Madenleri</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <!-- Left content with map -->
+      <div class="left-content">
+        <!-- Map section -->
+        <div class="map-section">
+          <div class="map-container">
+            <div #mapContainer class="svg-container" style="margin: 0 auto;"></div>
+            <div #tooltipContainer class="tooltip" style="display: none;"></div>
+            
+            <div *ngIf="loading" class="loading-overlay">
+              <div class="loading-spinner"></div>
+              <p>Harita verisi yukleniyor...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info section -->
+        <div class="info-section" *ngIf="sourceInfo">
+          <h3>Veri Kaynaklari ve Notlar</h3>
+          <p>{{ sourceInfo.uyari }}</p>
+          <p *ngIf="sourceInfo.kaynak_notu">{{ sourceInfo.kaynak_notu }}</p>
+          <div class="sources" *ngIf="sourceInfo.kaynaklar">
+            <h4>Kaynaklar:</h4>
+            <ul>
+              <li *ngFor="let source of getSourcesArray()">{{ source }}</li>
+            </ul>
+          </div>
+          <p class="disclaimer">Not: Haritada gosterilen veriler bilgilendirme amaclidir ve tam olarak guncel olmayabilir.</p>
+        </div>
+      </div>
+
+      <!-- Chatbot section on the right -->
+      <div class="chatbot-section">
+        <div class="chatbot-container">
+          <div class="chatbot-header">
+            <h3><i class="fas fa-robot"></i> Maden Güvenliği Asistanı</h3>
+          </div>
+          <div class="chatbot-messages" #chatMessagesContainer>
+            <div class="message system">
+              <div class="message-content">
+                <p>Merhaba! Maden güvenliği hakkında sorularınızı yanıtlayabilirim veya seçtiğiniz madenleri analiz edebilirim.</p>
+              </div>
+            </div>
+            <div *ngFor="let message of chatMessages" class="message" [ngClass]="{'user': message.sender === 'user', 'bot': message.sender === 'bot'}">
+              <div class="message-content">
+                <p>{{ message.content }}</p>
+                <span class="message-time">{{ message.timestamp | date:'HH:mm' }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="chatbot-input">
+            <input type="text" placeholder="Bir mesaj yazın..." [(ngModel)]="userMessage" (keyup.enter)="sendMessage()">
+            <button (click)="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Province Detail Popup Modal -->
+  <div class="modal-overlay" [class.active]="selectedProvince" (click)="closeProvinceDetail()">
+    <div class="modal-container" *ngIf="selectedProvince" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2><i class="fas fa-map-marker-alt"></i> {{ selectedProvince }} Maden Bilgileri</h2>
+        <button class="close-button" (click)="closeProvinceDetail()"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-content">
+        <div class="mine-stats">
+          <div class="stat-item">
+            <div class="stat-icon" [ngClass]="{'gold': selectedMineType === 'gold', 'coal': selectedMineType === 'coal'}">
+              <i class="fas" [ngClass]="{'fa-coins': selectedMineType === 'gold', 'fa-fire': selectedMineType === 'coal'}"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">{{ selectedProvinceMines?.length || 0 }}</span>
+              <span class="stat-label">{{ selectedMineType === 'gold' ? 'Altın' : 'Kömür' }} Madeni</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mine-list-container" *ngIf="selectedProvinceMines && selectedProvinceMines.length > 0">
+          <h3><i class="fas fa-list"></i> Maden Listesi</h3>
+          <div class="mine-card" *ngFor="let mine of selectedProvinceMines">
+            <div class="mine-card-header">
+              <h4><i class="fas fa-gem"></i> {{ mine.isim || 'İsimsiz Maden' }}</h4>
+              <span class="mine-type-badge" [ngClass]="{'gold': selectedMineType === 'gold', 'coal': selectedMineType === 'coal'}">
+                <i class="fas" [ngClass]="{'fa-coins': selectedMineType === 'gold', 'fa-fire': selectedMineType === 'coal'}"></i>
+                {{ selectedMineType === 'gold' ? 'Altın' : 'Kömür' }}
+              </span>
+            </div>
+            <div class="mine-card-content">
+              <p *ngIf="mine.isim"><i class="fas fa-gem"></i> <strong>İsim:</strong> {{ mine.isim }}</p>
+              <p *ngIf="mine.isletici"><i class="fas fa-building"></i> <strong>İşletici:</strong> {{ mine.isletici }}</p>
+              <p *ngIf="mine.tip"><i class="fas fa-info-circle"></i> <strong>Tip:</strong> {{ mine.tip }}</p>
+              <p *ngIf="mine.durum"><i class="fas fa-check-circle"></i> <strong>Durum:</strong> {{ mine.durum }}</p>
+              <p *ngIf="mine.notlar"><i class="fas fa-sticky-note"></i> <strong>Notlar:</strong> {{ mine.notlar }}</p>
+              <p *ngIf="mine.kaynaklar"><i class="fas fa-book"></i> <strong>Kaynaklar:</strong> {{ mine.kaynaklar }}</p>
+              
+              <!-- Display any other fields that might exist in the data -->
+              <ng-container *ngFor="let item of getAdditionalFields(mine)">
+                <p><i class="fas fa-plus-circle"></i> <strong>{{ formatFieldName(item.key) }}:</strong> {{ item.value }}</p>
+              </ng-container>
+
+              <!-- Add Analyze Mine button -->
+              <button class="analyze-button" (click)="analyzeMine(mine)">
+                <i class="fas fa-chart-line"></i> Bu Madeni Analiz Et
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="no-mines-message" *ngIf="!selectedProvinceMines || selectedProvinceMines.length === 0">
+          <div class="empty-state">
+            <i class="fas fa-search"></i>
+            <p>Bu ilde {{ selectedMineType === 'gold' ? 'altın' : 'kömür' }} madeni bulunmamaktadır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

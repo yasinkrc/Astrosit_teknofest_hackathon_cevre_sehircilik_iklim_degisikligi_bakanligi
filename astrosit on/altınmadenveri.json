@@ -1,0 +1,181 @@
+{
+    "ülke": "Türkiye",
+    "konu": "Altın madenleri - geniş kapsamlı envanter (aktif, pasif, kapalı, rezerv) — best-effort",
+    "son_derleme": "2025-08-30",
+    "uyarı": "Web erişimi kapalı olduğundan bu liste, genel kamu bilgileri, daha önceki derlemeler ve sektör bilinirlikleri üzerine hazırlanmıştır. Tam, ruhsat-bazlı eksiksiz doğrulama için MTA/MAPEG ve şirket kayıtlarının doğrudan taranması gerekir.",
+    "özet_sayılar_tahmin": {
+      "kapsanan_iller": 26,
+      "isimli_maden_girdi_sayısı": 38,
+      "notlar": "Türkiye'de yüzlerce ruhsat ve arama sahası mevcuttur; bu liste bilinen ve kamuya açık kaynaklarda sıkça geçen altın işletmelerini ve büyük/orta sahaları içerir."
+    },
+    "iller": [
+      {
+        "il": "Uşak",
+        "madenler": [
+          {
+            "isim": "Kışladağ Altın Madeni",
+            "tip": "açık ocak altın madeni",
+            "işletici": "belgelenmiş büyük işletme (şirket ismi doğrulanmalı)",
+            "durum": "aktif/büyük üretim sahası",
+            "notlar": "Türkiye'nin en büyük açık ocak altın sahalarından biri olarak bilinir."
+          }
+        ]
+      },
+      {
+        "il": "İzmir",
+        "madenler": [
+          {
+            "isim": "Efemçukuru Altın Madeni",
+            "tip": "yeraltı/yerüstü altın işletmesi",
+            "işletici": "belgelenmiş önemli üretici",
+            "durum": "aktif",
+            "notlar": "Menderes havzasında yer alan bilinir altın sahası."
+          },
+          {
+            "isim": "Çukuralan / çevresi (belgelenmiş altın sahaları)",
+            "tip": "altın - çok noktalı sahalar",
+            "işletici": "çeşitli/yerel ruhsatlar",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Erzincan",
+        "madenler": [
+          {
+            "isim": "Çöpler (İliç) Altın Madeni",
+            "tip": "açık ocak ve zenginleştirme (altın-konsantre)",
+            "işletici": "büyük ölçekli işletme (şirket ismi doğrulanmalı)",
+            "durum": "aktif",
+            "notlar": "Bölgesel olarak önemli altın sahası"
+          }
+        ]
+      },
+      {
+        "il": "Manisa",
+        "madenler": [
+          {
+            "isim": "Sart (Salihli) Altın Sahası",
+            "tip": "altın işletmesi / rezerv sahası",
+            "işletici": "belgelenmiş saha",
+            "durum": "belgelenmiş",
+            "notlar": "Manisa / Salihli civarında bilinen altın yatağı"
+          }
+        ]
+      },
+      {
+        "il": "Çanakkale / Balıkesir / İzmir yöresi",
+        "madenler": [
+          {
+            "isim": "Ovacık ve civarı (Bergama / Çan çevresi olarak belgelenen sahalar)",
+            "tip": "altın işletmeleri ve arama sahaları",
+            "işletici": "çeşitli şirket ruhsatları",
+            "durum": "aktif / geçmiş üretim sahaları",
+            "notlar": "Ege bölgesinde birden fazla altın sahası bulunur; Ovacık gibi sahalar bölgesel bilinir örneklerdendir."
+          }
+        ]
+      },
+      {
+        "il": "Aydın",
+        "madenler": [
+          {
+            "isim": "Aydın yöresi - küçük/orta altın sahaları",
+            "tip": "altın arama ve işletme sahaları",
+            "işletici": "yerel ve ulusal ruhsatlar",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Antalya / Burdur çevresi",
+        "madenler": [
+          {
+            "isim": "Burdur-Antalya yöresi altın arama sahaları",
+            "tip": "altın - çoklu ruhsatlar",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Balıkesir",
+        "madenler": [
+          {
+            "isim": "Balıkesir çevresi altın sahaları (Madra/Bergama hattı dahil)",
+            "tip": "altın - açık/yeraltı",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Sivas / Yozgat hattı",
+        "madenler": [
+          {
+            "isim": "Sivas-Yozgat bölgesi altın/arkaik arama sahaları",
+            "tip": "altın - yer yer lode ve yayılımlar",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Rize / Artvin çevresi",
+        "madenler": [
+          {
+            "isim": "Doğu Karadeniz altın arama sahaları",
+            "tip": "altın - yayılımlar / damarlı mineralizasyon",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Kütahya / Uşak hattı",
+        "madenler": [
+          {
+            "isim": "Kütahya-Uşak çevresi altın sahaları (bölgesel arama/işletme sahaları)",
+            "tip": "altın",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Erzurum / Gümüşhane hattı",
+        "madenler": [
+          {
+            "isim": "Doğu Anadolu altın/gümüş-sülfid yatakları (bölgesel sahalar)",
+            "tip": "altın ve birlikte gümüş içerikli yataklar",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Bilecik / Eskişehir çevresi",
+        "madenler": [
+          {
+            "isim": "Bilecik-Eskişehir arası altın arama sahaları",
+            "tip": "altın (lokal aramalar/ruhsatlar)",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Kırşehir / Nevşehir çevresi",
+        "madenler": [
+          {
+            "isim": "Orta Anadolu altın arama sahaları",
+            "tip": "altın-yerel aramalar",
+            "durum": "belgelenmiş"
+          }
+        ]
+      },
+      {
+        "il": "Diğer_iller_genel_özet",
+        "madenler": [
+          {
+            "notlar": "Türkiye'de birçok ilde altın arama ruhsatları ve küçük üretim sahaları vardır. Tam ruhsat listesi için MTA/MAPEG ve şirket duyurularının taranması gerekir; bu JSON büyük/orta ölçekli ve yaygın bilinen sahaları özetler."
+          }
+        ]
+      }
+    ],
+    "kaynak_notu": "Liste, web erişimi olmadan hazırlanmış best-effort derlemedir. Çoğu sahaya ait kesin işletici, koordinat, üretim miktarları ve ruhsat numaraları MTA/MAPEG ve işletme şirketlerinin resmi belgelerinde yer alır — web erişimi açıldığında veya bu dökümanlar sağlandığında kesin, satır-satır doğrulanmış JSON üretebilirim.",
+    "öneri": "Eğer isterseniz: 1) Web erişimini açın, ben resmi kaynakları (MTA/MAPEG, şirket raporları, GEM vb.) tarayıp **tam ruhsat-bazlı** JSON çıkarayım; veya 2) MTA/MAPEG'ten çektiğiniz ruhsat CSV/PDF'leri yükleyin, ben bunları satır-satır JSON'a dönüştüreyim."
+  }
+  

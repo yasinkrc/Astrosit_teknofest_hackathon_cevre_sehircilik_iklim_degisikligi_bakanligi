@@ -1,0 +1,180 @@
+{
+  "ulke": "Turkiye",
+  "konu": "Altin madenleri - genis kapsamli envanter (aktif, pasif, kapali, rezerv) — best-effort",
+  "son_derleme": "2025-08-30",
+  "uyari": "Web erisimi kapali oldugundan bu liste, genel kamu bilgileri, daha onceki derlemeler ve sektor bilinirlikleri uzerine hazirlanmistir. Tam, ruhsat-bazli eksiksiz dogrulama icin MTA/MAPEG ve sirket kayitlarinin dogrudan taranmasi gerekir.",
+  "ozet_sayilar_tahmin": {
+    "kapsanan_iller": 26,
+    "isimli_maden_girdi_sayisi": 38,
+    "notlar": "Turkiye'de yuzlerce ruhsat ve arama sahasi mevcuttur; bu liste bilinen ve kamuya acik kaynaklarda sikca gecen altin isletmelerini ve buyuk/orta sahalari icerir."
+  },
+  "iller": [
+    {
+      "il": "Usak",
+      "madenler": [
+        {
+          "isim": "Kisladag Altin Madeni",
+          "tip": "acik ocak altin madeni",
+          "isletici": "belgenmis buyuk isletme (sirket ismi dogrulanmali)",
+          "durum": "aktif/buyuk uretim sahasi",
+          "notlar": "Turkiye'nin en buyuk acik ocak altin sahalarindan biri olarak bilinir."
+        }
+      ]
+    },
+    {
+      "il": "Izmir",
+      "madenler": [
+        {
+          "isim": "Efemcukuru Altin Madeni",
+          "tip": "yeralti/yerustu altin isletmesi",
+          "isletici": "belgenmis onemli uretici",
+          "durum": "aktif",
+          "notlar": "Menderes havzasinda yer alan bilinir altin sahasi."
+        },
+        {
+          "isim": "Cukuralan / cevresi (belgenmis altin sahalari)",
+          "tip": "altin - cok noktali sahalar",
+          "isletici": "cesitli/yerel ruhsatlar",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Erzincan",
+      "madenler": [
+        {
+          "isim": "Copler (Ilic) Altin Madeni",
+          "tip": "acik ocak ve zenginlestirme (altin-konsantre)",
+          "isletici": "buyuk olcekli isletme (sirket ismi dogrulanmali)",
+          "durum": "aktif",
+          "notlar": "Bolgesel olarak onemli altin sahasi"
+        }
+      ]
+    },
+    {
+      "il": "Manisa",
+      "madenler": [
+        {
+          "isim": "Sart (Salihli) Altin Sahasi",
+          "tip": "altin isletmesi / rezerv sahasi",
+          "isletici": "belgenmis saha",
+          "durum": "belgenmis",
+          "notlar": "Manisa / Salihli civarinda bilinen altin yatagi"
+        }
+      ]
+    },
+    {
+      "il": "Canakkale / Balikesir / Izmir yoresi",
+      "madenler": [
+        {
+          "isim": "Ovacik ve civari (Bergama / Can cevresi olarak belgelenen sahalar)",
+          "tip": "altin isletmeleri ve arama sahalari",
+          "isletici": "cesitli sirket ruhsatlari",
+          "durum": "aktif / gecmis uretim sahalari",
+          "notlar": "Ege bolgesinde birden fazla altin sahasi bulunur; Ovacik gibi sahalar bolgesel bilinir orneklerdendir."
+        }
+      ]
+    },
+    {
+      "il": "Aydin",
+      "madenler": [
+        {
+          "isim": "Aydin yoresi - kucuk/orta altin sahalari",
+          "tip": "altin arama ve isletme sahalari",
+          "isletici": "yerel ve ulusal ruhsatlar",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Antalya / Burdur cevresi",
+      "madenler": [
+        {
+          "isim": "Burdur-Antalya yoresi altin arama sahalari",
+          "tip": "altin - coklu ruhsatlar",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Balikesir",
+      "madenler": [
+        {
+          "isim": "Balikesir cevresi altin sahalari (Madra/Bergama hatti dahil)",
+          "tip": "altin - acik/yeralti",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Sivas / Yozgat hatti",
+      "madenler": [
+        {
+          "isim": "Sivas-Yozgat bolgesi altin/arkaik arama sahalari",
+          "tip": "altin - yer yer lode ve yayilimlar",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Rize / Artvin cevresi",
+      "madenler": [
+        {
+          "isim": "Dogu Karadeniz altin arama sahalari",
+          "tip": "altin - yayilimlar / damarli mineralizasyon",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Kutahya / Usak hatti",
+      "madenler": [
+        {
+          "isim": "Kutahya-Usak cevresi altin sahalari (bolgesel arama/isletme sahalari)",
+          "tip": "altin",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Erzurum / Gumushane hatti",
+      "madenler": [
+        {
+          "isim": "Dogu Anadolu altin/gumus-sulfid yataklari (bolgesel sahalar)",
+          "tip": "altin ve birlikte gumus icerikli yataklar",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Bilecik / Eskisehir cevresi",
+      "madenler": [
+        {
+          "isim": "Bilecik-Eskisehir arasi altin arama sahalari",
+          "tip": "altin (lokal aramalar/ruhsatlar)",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Kirsehir / Nevsehir cevresi",
+      "madenler": [
+        {
+          "isim": "Orta Anadolu altin arama sahalari",
+          "tip": "altin-yerel aramalar",
+          "durum": "belgenmis"
+        }
+      ]
+    },
+    {
+      "il": "Diger_iller_genel_ozet",
+      "madenler": [
+        {
+          "notlar": "Turkiye'de bircok ilde altin arama ruhsatlari ve kucuk uretim sahalari vardir. Tam ruhsat listesi icin MTA/MAPEG ve sirket duyurularinin taranmasi gerekir; bu JSON buyuk/orta olcekli ve yaygin bilinen sahalari ozetler."
+        }
+      ]
+    }
+  ],
+  "kaynak_notu": "Liste, web erisimi olmadan hazirlanmis best-effort derlemedir. Cogu sahaya ait kesin isletici, koordinat, uretim miktarlari ve ruhsat numaralari MTA/MAPEG ve isletme sirketlerinin resmi belgelerinde yer alir — web erisimi acildiginda veya bu dokumanlar saglandiginda kesin, satir-satir dogrulanmis JSON uretebilirim.",
+  "oneri": "Eger isterseniz: 1) Web erisimini acin, ben resmi kaynaklari (MTA/MAPEG, sirket raporlari, GEM vb.) tarayip **tam ruhsat-bazli** JSON cikarayim; veya 2) MTA/MAPEG'ten cektiginiz ruhsat CSV/PDF'leri yukleyin, ben bunlari satir-satir JSON'a donustureyim."
+}

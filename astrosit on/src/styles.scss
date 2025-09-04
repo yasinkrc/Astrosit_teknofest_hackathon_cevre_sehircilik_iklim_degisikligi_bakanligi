@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Map city styles */
+.city {
+  fill: #e0e0e0;
+  stroke: #ffffff;
+  stroke-width: 0.5;
+  transition: fill 0.3s ease;
+  
+  &:hover {
+    fill: #a0a0a0;
+    cursor: pointer;
+  }
+}
+
+/* Sales data categories */
+.category-high {
+  fill: #1a9641;
+}
+
+.category-medium-high {
+  fill: #a6d96a;
+}
+
+.category-medium {
+  fill: #ffffbf;
+}
+
+.category-medium-low {
+  fill: #fdae61;
+}
+
+.category-low {
+  fill: #d7191c;
+}
+
+.inactive {
+  fill: #cccccc;
+  opacity: 0.5;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 1000;
+  font-size: 14px;
+}
