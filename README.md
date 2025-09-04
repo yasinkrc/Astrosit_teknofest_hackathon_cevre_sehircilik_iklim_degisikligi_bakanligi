@@ -1,5 +1,7 @@
 # 🌍 Astrosit | SmellControl ile Koku Tabanlı Coğrafi Yatırım Öncelikleri Haritalama Platformu
 
+![Astrosit Logo](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/astrosit_logo.png?raw=true)
+
 **Kategori:** Sektörel Yatırım Öncelikleri – TÜİK Verileri ile Karar Destek Sistemleri  
 **Hackathon:** TEKNOFEST 2025 – Geleceğin Sürdürülebilir Şehirleri  
 **Takım Adı:** Astrosit  
@@ -62,7 +64,9 @@ JSON formatında **ilçe bazlı veri kaynakları**, `astroist_on/src/` klasörü
 - **Veri Alım Hızı:** Her 1.8 saniyede tam okuma  
 - **Enerji Tüketimi:** 1 µW  
 - **Koku Algılama Aralığı:** ppb düzeyi  
-- **Veri Formatı:** `.csv`, `.json` (annotated)  
+- **Veri Formatı:** `.csv`, `.json` (annotated)
+
+![Ürün Bilgisi](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/10.png?raw=true) 
 
 ### 🛰️ Gömülü Teknoloji
 
@@ -106,7 +110,7 @@ JSON formatında **ilçe bazlı veri kaynakları**, `astroist_on/src/` klasörü
 
 Veri seti: 12.000+ etiketli satır  
 Dizin: `Astroit_hackathon_ai_model/`
-
+![Veri Seti](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/356723869-94c33ccc-4fc9-448f-a53f-68313e7f36cb.png?raw=true) 
 ---
 
 ## 🗺️ Gerçekleştirilen Kullanım Senaryoları
@@ -134,6 +138,53 @@ Dizin: `Astroit_hackathon_ai_model/`
 - %87 eşik üstü alanlar belirlendi
 
 ---
+## 🗺️ Haritalama Görselleri
+
+### 🗺️ Harita 1 – Çevresel Yoğunluk
+
+![Harita 1](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20111720.png?raw=true)
+
+---
+
+### 🗺️ Harita 2 – VOC Sızıntı Alanları
+
+![Harita 2](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20111744.png?raw=true)
+
+---
+
+### 🗺️ Harita 3 – Arıcılık Uyum Haritası
+
+![Harita 3](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20122008.png?raw=true)
+
+---
+
+### 🗺️ Harita 4 – Flora Yoğunluğu
+
+![Harita 4](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20122018.png?raw=true)
+
+---
+
+### 🗺️ Harita 5 – Risk Puanlama Analizi
+
+![Harita 5](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20122054.png?raw=true)
+
+---
+
+### 🗺️ Harita 6 – OSB ve Sanayi Dağılımı
+
+![Harita 6](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20122226.png?raw=true)
+
+---
+
+### 🗺️ Harita 7 – Arıtma Tesisi İhtiyaç Haritası
+
+![Harita 7](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20122242.png?raw=true)
+
+---
+
+### 🗺️ Harita 8 – Koku Bazlı Yatırım Haritası
+
+![Harita 8](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/Ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202025-09-04%20122353.png?raw=true)
 
 ## 📦 Projenin Dosya Mimarisi
 
@@ -164,6 +215,7 @@ Dizin: `Astroit_hackathon_ai_model/`
 - `system.properties`: 🔧 Render ayarları
 
 ---
+![Donanım 1](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/9.png?raw=true) 
 
 ## 💰 Yatırımcı Kazanımları
 
@@ -194,6 +246,7 @@ Dizin: `Astroit_hackathon_ai_model/`
 - 💻 Web arayüzü ile anlık görselleştirme  
 - 🧠 AI tabanlı koku tanıma
 
+![Yazılım Donanım Akışı](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/11.png?raw=true) 
 ---
 
 ## 🤝 Önerilen Kamu Ortaklıkları
