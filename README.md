@@ -128,125 +128,40 @@ Modelin eğitimi için 12.000+ satırlık etiketli koku verisi, `Astroit_hackath
 📊 %87’lik eşik üstü alanlar belirlenip yatırım için önlem raporu sunuldu
 
 ---
+📦 Proje Dosya Mimarisi
 
-## 📦 Projenin Dosya Mimarisi
-proje_bilgisi:
-  📁 dosya_yapisi:
-    Astroit_hackathon_ai_model:
-      icerik:
-        - train.ipynb: "🤖 Yapay zeka model eğitimi için kullanılan Jupyter Notebook dosyası"
-        - prepare_dataset.ipynb: "📊 Veri ön işleme ve formatlama adımları"
-        - smell_model.pkl: "🧠 Eğitilmiş koku sınıflandırma modeli"
-        - sensor_data.csv: "📈 Sensörlerden alınan ham verilerin işlenmiş hali"
-        - scaler.pkl / knn_classifier.pkl: "⚙️ Modelin yardımcı bileşenleri (ölçekleyici ve sınıflandırıcı)"
-    Smell_Inspector_Donanim:
-      alt_klasorler:
-        Smell_Annotator_SW: "📝 Etiketlenmiş koku verileri, Python tabanlı işaretleme yazılımı"
-        PyCharm: "💻 Sensör verilerinin koda dönüştürülüp işaretlendiği ortam"
-    astroist_on:
-      src:
-        - altinmadeneri.json: "🏅 Altın madeni lokasyon verileri"
-        - komurmadenveri.json: "🪨 Kömür sahalarına ait il/ilçe bazlı coğrafi veri"
-        - angular.json: "⚛️ Angular frontend yapılandırma ayarları"
-        - turkey-map.svg: "🗺️ SVG formatında Türkiye haritası – katmanlı gösterim için kullanılır"
-    backend:
-      yapi:
-        - Dockerfile: "🐳 Projeyi container ortamında deploy etmek için yapılandırma"
-        - pom.xml: "☕ Java Spring Boot bağımlılık yönetimi"
-        - system.properties: "🔧 Render ayarları ve sistem dosyaları"
+Astroit_hackathon_ai_model:
 
-  🔥 senaryolar:
-    - senaryo: "🌲 Orman Yangını Öncesi Koku Anomali Tespiti"
-      lokasyon: "📍 Muğla – Fethiye"
-      veri: "🧪 VOC gaz yoğunluğu eşik değeri > 87 ppm"
-      erken_uyari: "⏰ 45 dakika önceden uyarı sinyali üretildi"
-      hedef_kurumlar: ["AFAD", "OGM", "Çevre Bakanlığı"]
-    - senaryo: "🌾 Tarımsal Mantari Risk Analizi"
-      lokasyon: "📍 Şanlıurfa – Harran Ovası"
-      hedef_bitki: "🍅 Domates"
-      anomali: "💨 Metan + Amonyak salınımında ani sıçrama"
-      aksiyon: "💉 Erken ilaçlama → %19 verim artışı"
-    - senaryo: "🏭 Sanayi Emisyon Haritalama"
-      lokasyon: "📍 Adana OSB"
-      risk_skoru: "🔴 0.81 (yüksek eşik üstü değer)"
-      sensör_sayisi: 8
-      yatırımcı_çıktısı: "📑 Baca filtresi zorunluluğu için bilimsel rapor"
-    - senaryo: "🐝 Arıcılık Uygunluk Haritalaması"
-      lokasyon: "📍 Artvin & Ordu"
-      floral_koku_tespiti: "🌼 Soğan, sarımsak, portakal, narenciye"
-      analiz: "📊 64-kanal sinyaliyle 0.93 korelasyon"
-      öneri: "📍 Yeni arıcılık yatırım bölgesi önerildi"
+train.ipynb: 🤖 Yapay zeka model eğitimi için kullanılan Jupyter Notebook dosyası
 
-  🧠 yapay_zeka:
-    en_başarılı_model: "KNN (En Yakın Komşuluk)"
-    metrikler:
-      dogruluk: 0.98
-      precision: 0.96
-      recall: 0.98
-      f1_skoru: 0.97
-    ogrenme_tipi: "📘 Gözetimli öğrenme"
-    siniflandirma_mantigi: "📈 64 boyutlu direnç sinyali vektörlerinin karşılaştırılması"
-    veriseti:
-      toplam_veri: "12000+"
-      egitim_orani: "70%"
-      test_orani: "30%"
-      dosya: "sensor_data.csv"
+prepare_dataset.ipynb: 📊 Veri ön işleme ve formatlama adımları
 
-  💰 yatirimci_kazanimlari:
-    - 🗺️ Stratejik yatırım haritası oluşturma
-    - 🌿 Çevre dostu risk modelleme
-    - 🤖 Yapay zekâ ile veri tabanlı karar destek
-    - 📘 ESG uyumlu çevresel raporlama
-    - 🧭 Yerel yönetimler için saha öncesi değerlendirme
-    - ⚖️ Tarım ve sanayi dengesi için rehberlik
-    - 🏭 OSB’ler için emisyon ücretlendirme altyapısı
+smell_model.pkl: 🧠 Eğitilmiş koku sınıflandırma modeli
 
-  🌍 sürdürülebilirlik_uyumu:
-    hedefler:
-      - 🏙️ SDG 11: Sürdürülebilir şehir ve yerleşkeler
-      - 🏗️ SDG 9: Sanayi, yenilikçilik ve altyapı
-      - 🌡️ SDG 13: İklim eylemi
-      - 🔄 SDG 12: Sorumlu üretim ve tüketim
-    karbon_takibi: "♻️ VOC içindeki karbon bazlı bileşenler aktif olarak takip ediliyor"
-    veri_politikasi:
-      format: ["JSON", "CSV", ".pkl"]
-      saklama: "☁️ Lokal ve bulut tabanlı veri saklama"
-      planlanan_gelisme: "🔐 Kriptolu veri paylaşım ağı geliştirilecek"
+sensor_data.csv: 📈 Sensörlerden alınan ham verilerin işlenmiş hali
 
-  🧪 teknolojik_yenilikler:
-    - 🚀 Türkiye’de ilk defa 64-kanallı dijital koku verisi ile yatırım haritası üretimi
-    - 📍 GPS destekli eşzamanlı VOC sinyali etiketleme sistemi
-    - 🔬 Çoklu sensör dizilimiyle eş zamanlı anomali analizi
-    - 💻 Web tabanlı kullanıcı arayüzüyle anında görselleştirme
-    - 🧠 Yapay zekâ destekli “koku tanıma & yorumlama” altyapısı
+scaler.pkl / knn_classifier.pkl: ⚙️ Modelin yardımcı bileşenleri (ölçekleyici ve sınıflandırıcı)
 
-  🤝 önerilen_kamu_ortakliklari:
-    - 🏛️ T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı
-    - 📊 Türkiye İstatistik Kurumu (TÜİK)
-    - 🚨 AFAD – Afet Koordinasyonu
-    - 🌲 Orman Genel Müdürlüğü
-    - 🏙️ Pilot belediyeler (Şanlıurfa, Adana, Artvin vb.)
+Smell_Inspector_Donanim:
 
-  💼 olası_ticari_gelir_modelleri:
-    B2G:
-      - 🧾 Belediyelere lisanslı karar destek platformu
-      - 🏗️ Kamu ihalelerine VOC analiz modülü
-    B2B:
-      - 🏭 OSB içi sanayi firmalarına emisyon danışmanlığı
-      - 🧴 Gıda, parfüm, tarım sektörüne özel koku analiz sistemi
-    B2C:
-      - 📱 Mobil uygulama ile bireysel çevre bilinci – freemium/premium modeli
+Smell_Annotator_SW: 📝 Etiketlenmiş koku verileri, Python tabanlı işaretleme yazılımı
 
-  🗺️ yol_haritasi:
-    kısa_vade:
-      - 📊 Anlık rapor üretimi için kullanıcı paneli
-      - 📚 10.000+ yeni koku verisi toplanması
-    orta_vade:
-      - 🔗 Belediyelerle API entegrasyonu
-      - 🌐 Açık veri portalı oluşturulması
-    uzun_vade:
-      - 🇪🇺 Avrupa Birliği Horizon projelerine katılım
-      - 🛠️ SmellControl cihazının ticarileştirilmesi ve ihraç edilmesi
-      - 🎤 CES 2026 Las Vegas – donanım lansmanı
+PyCharm: 💻 Sensör verilerinin koda dönüştürülüp işaretlendiği ortam
 
+astroist_on/src:
 
+altinmadeneri.json: 🏅 Altın madeni lokasyon verileri
+
+komurmadenveri.json: 🪨 Kömür sahalarına ait il/ilçe bazlı coğrafi veri
+
+angular.json: ⚛️ Angular frontend yapılandırma ayarları
+
+turkey-map.svg: 🗺️ SVG formatında Türkiye haritası – katmanlı gösterim için kullanılır
+
+astroist_on/backend:
+
+Dockerfile: 🐳 Projeyi container ortamında deploy etmek için yapılandırma
+
+pom.xml: ☕ Java Spring Boot bağımlılık yönetimi
+
+system.properties: 🔧 Render ayarları ve sistem dosyaları
