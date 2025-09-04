@@ -125,6 +125,19 @@ Dizin: `Astroit_hackathon_ai_model/`
 - Flora analizleri, %92 eşleşme  
 - 5 yeni yatırım lokasyonu önerildi
 
+---
+
+![Ek Görsel 1](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/2.jpeg?raw=true)
+
+---
+
+![Ek Görsel 2](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/3.jpeg?raw=true)
+
+---
+
+![Ek Görsel 3](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/1.jpeg?raw=true)
+
+
 ### #3 🛢️ Petrol ve Gaz Sızıntısı İzleme
 - **Lokasyon:** İzmit Körfezi, Mersin Limanı  
 - Deniz kıyısında hidrokarbon sızıntısı tespiti
