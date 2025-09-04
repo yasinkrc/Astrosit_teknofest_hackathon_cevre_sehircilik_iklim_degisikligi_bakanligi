@@ -3,165 +3,236 @@
 **Kategori:** Sektörel Yatırım Öncelikleri – TÜİK Verileri ile Karar Destek Sistemleri  
 **Hackathon:** TEKNOFEST 2025 – Geleceğin Sürdürülebilir Şehirleri  
 **Takım Adı:** Astrosit  
-**Takım Üyeleri:** Yasin Karaca , Nazlıcan Atlı  
+**Takım Üyeleri:** Yasin Karaca, Nazlıcan Atlı  
 **Teknoloji Alanları:** Nanohibrit sensör teknolojisi, yapay zekâ, büyük veri, çevresel yatırım analizleri, coğrafi bilgi sistemleri, veri görselleştirme
 
 ---
 
 ## 💡 Giriş: Yatırım Perspektifinden Projenin Önemi
 
-Türkiye’de yatırım kararlarının çoğu zaman geçmiş deneyimlere, sezgilere ya da eksik veri analizlerine dayanarak verildiği bir dönemdeyiz. Ancak **günümüzün şehir planlaması, enerji altyapısı, tarım yatırımları ve çevresel sürdürülebilirlik alanlarında başarı**, artık yalnızca “tahminle” değil, **veriye dayalı karar sistemleriyle** mümkündür.
+Türkiye’de yatırım kararlarının çoğu zaman geçmiş deneyimlere, sezgilere ya da eksik veri analizlerine dayanarak verildiği bir dönemdeyiz. Ancak günümüzün şehir planlaması, enerji altyapısı, tarım yatırımları ve çevresel sürdürülebilirlik alanlarında başarı, artık yalnızca “tahminle” değil, veriye dayalı karar sistemleriyle mümkündür.
 
-İşte bu noktada Astrosit ekibi olarak geliştirdiğimiz **SmellControl** tabanlı platform, **TÜİK’in tematik veri setlerini**, **kokuyu algılayabilen çok kanallı yapay zekâ destekli gaz sensörlerimizle** birleştirerek, **yatırımcıların stratejik lokasyon seçimlerini** kolaylaştıran, **çevresel analizleri otomatize eden** ve **kentlerin geleceğini veriyle şekillendiren** bir çözüm sunmaktadır.
+İşte bu noktada Astrosit ekibi olarak geliştirdiğimiz **SmellControl tabanlı platform**, TÜİK’in tematik veri setlerini, kokuyu algılayabilen çok kanallı yapay zekâ destekli gaz sensörlerimizle birleştirerek, yatırımcıların stratejik lokasyon seçimlerini kolaylaştıran, çevresel analizleri otomatize eden ve kentlerin geleceğini veriyle şekillendiren bir çözüm sunmaktadır.
 
-Sistemin temel amacı, sadece çevresel izleme değil; aynı zamanda bu çevresel verilerle **yatırım yapılabilirlik haritaları** oluşturmak, **ekonomik değeri olan bölgeleri** saptamak ve **yerel yönetimlere, özel sektöre ve yatırımcılara** bilimsel ve teknik tabanlı rehberlik etmektir.
+Sistemin temel amacı, sadece çevresel izleme değil; aynı zamanda bu çevresel verilerle yatırım yapılabilirlik haritaları oluşturmak, ekonomik değeri olan bölgeleri saptamak ve yerel yönetimlere, özel sektöre ve yatırımcılara bilimsel ve teknik tabanlı rehberlik etmektir.
 
 ---
 
 ## 🔬 Proje Özeti ve Yenilikçi Yönleri
 
-**SmellControl**, çok kanallı yapay zekâ destekli bir **nanohibrit gaz algılama platformudur**. Geliştirdiğimiz sistem, 16 kanallı Smell iX16 çiplerinden oluşan bir sensör modülüyle, çok çeşitli **gazları ve kokuları** (VOC – Volatile Organic Compounds) algılar. Toplanan veriler, özel olarak geliştirilen makine öğrenmesi algoritmalarıyla analiz edilerek, **her il ve ilçe için çevresel yatırım skoru, sanayi uygunluk raporu, tarımsal flora durumu, arıcılık uyumu ve çevre risk puanı** gibi çıktılar üretilir.
+**SmellControl**, çok kanallı yapay zekâ destekli bir nanohibrit gaz algılama platformudur.  
+Sensör modülü: **Smell iX16** çipi (16 kanal)  
+Veriler işlenerek aşağıdaki çıktılar oluşturulur:
 
-Bu verilerle şu sorulara yanıt veriyoruz:
+- Çevresel yatırım skoru  
+- Sanayi uygunluk raporu  
+- Tarımsal flora durumu  
+- Arıcılık uyumu  
+- Çevre risk puanı
 
-- **Yatırımcılar** için: Bu ilçede gıda fabrikası kurulabilir mi?  
-- **Belediyeler** için: Hangi bölgede arıtma tesisi ihtiyacı var?  
-- **Çevreciler** için: Sanayi kaynaklı gaz emisyonu hangi mahalleleri etkiliyor?  
-- **Arıcılar ve tarım yatırımcıları** için: En uygun flora nerede?
+### Yanıt Verdiğimiz Sorular:
+
+- **Yatırımcılar için:** Bu ilçede gıda fabrikası kurulabilir mi?  
+- **Belediyeler için:** Hangi bölgede arıtma tesisi ihtiyacı var?  
+- **Çevreciler için:** Sanayi kaynaklı gaz emisyonu hangi mahalleleri etkiliyor?  
+- **Arıcılar/Tarım Yatırımcıları için:** En uygun flora nerede?
 
 ---
 
 ## 📊 Kullanılan Veriler ve Entegrasyonlar
 
-### 📌 TÜİK Veri Tabanı Entegrasyonları
+### 📌 TÜİK Veri Tabanı Entegrasyonları (10 Tematik Set)
 
-Projemiz, TEKNOFEST şartnamesine uygun olarak aşağıdaki **10 tematik TÜİK veri seti**yle uyumlu olarak çalışır:
+- **Çevre ve Enerji:** Elektrik üretim/dağıtım bölgeleri, arıtma tesisleri, emisyon miktarları  
+- **Sanayi:** OSB yoğunluğu, üretim hacmi  
+- **Tarım:** Bitki örtüsü yoğunluğu, arıcılık verimlilik endeksi  
+- **Ulaştırma:** Liman, otoyol, sanayi hattı yakınlığı  
+- **Sağlık:** Hava kirliliği bağlantılı hastalık oranları  
 
-- **Çevre ve Enerji**: Elektrik üretim/dağıtım bölgeleri, arıtma tesisleri, emisyon miktarları
-- **Sanayi**: OSB (Organize Sanayi Bölgesi) yoğunluğu, üretim hacmi
-- **Tarım ve Hayvancılık**: Bitki örtüsü yoğunluğu, arıcılık verimlilik endeksi
-- **Ulaştırma ve Haberleşme**: Liman, otoyol, sanayi hattı yakınlığı
-- **Sağlık ve Sosyal Koruma**: Hava kirliliği bağlantılı hastalık oranları
-
-Tüm bu veriler, projemizde **JSON formatında ilçe bazlı veri kaynakları** ile `astroist on/src/` klasöründe işlenmiş durumdadır.
+JSON formatında **ilçe bazlı veri kaynakları**, `astroist_on/src/` klasöründe.
 
 ---
 
 ## 🧠 Kullanılan Sensör ve Donanım Özeti
 
-SmellControl sistemi, fiziksel olarak özel bir **donanım platformuna sahip hazır sensör cihazıyla** çalışmaktadır.
-
 ### 🔹 Donanım Özellikleri
-- **Çip:** Smell iX16 – 16 kanal gaz/koku sensörü
-- **Kanal Sayısı:** 64 (4×iX16 modül)
-- **Veri Alım Hızı:** Her 1.8 saniyede tam okuma
-- **Enerji Tüketimi:** 1 µW (süper düşük güç)
-- **Koku Algılama Aralığı:** ppb düzeyi (milyarda bir)
-- **Veri Hacmi:** 1 saatlik analizde ortalama **15.000 satır veri**
-- **Veri Formatı:** `.csv` ve `.json` (annotated)
 
-### 🛰️ Gömülü Teknoloji ve Entegrasyonlar
-- 📍 Dahili GPS modülü sayesinde **konum verisiyle eşzamanlı veri etiketleme**
-- 🔁 Aynı anda 4 çipten paralel veri alımı
-- 🧠 Yapay zekâ destekli sınıflandırma için yerleşik yazılım
+- **Çip:** Smell iX16 – 16 kanal gaz/koku sensörü  
+- **Kanal Sayısı:** 64 (4x iX16 modül)  
+- **Veri Alım Hızı:** Her 1.8 saniyede tam okuma  
+- **Enerji Tüketimi:** 1 µW  
+- **Koku Algılama Aralığı:** ppb düzeyi  
+- **Veri Formatı:** `.csv`, `.json` (annotated)  
 
-### 🧪 Algılanabilen Örnek VOC’ler
-| Koku/Gaz | Kaynak | Kullanım Örneği |
-|----------|--------|------------------|
-| Amonyak | Tarım, hayvancılık | Gübre sızıntısı analizi |
-| Etanol, Aseton | Sanayi | Kimyasal salınım takibi |
-| Kahve, Soğan | Flora | Tarımsal uygunluk |
-| Benzin, Mazot | Liman | Petrol sızıntısı tespiti |
-| Formaldehit | Konut | Hava kalitesi |
+### 🛰️ Gömülü Teknoloji
 
-Toplamda sistem, **30+ koku/gaz türünü** başarıyla sınıflandırmaktadır.
+- Dahili **GPS** modülü  
+- Aynı anda 4 çipten paralel veri alımı  
+- Yerleşik yazılım ile yapay zekâ destekli sınıflandırma
+
+---
+
+## 🧪 Algılanabilen Örnek VOC’ler
+
+| Koku/Gaz       | Kaynak & Kullanım Örneği                           |
+|----------------|-----------------------------------------------------|
+| Amonyak        | Tarım: Gübre sızıntısı                              |
+| Etanol/Aseton  | Sanayi: Kimyasal salınım                            |
+| Kahve/Soğan    | Flora: Tarımsal uygunluk analizi                    |
+| Benzin/Mazot   | Liman: Petrol sızıntısı                             |
+| Formaldehit    | Konut: İç hava kalitesi                             |
+
+> Toplamda 30+ gaz/koku sınıflandırılabilir.
 
 ---
 
 ## 🧠 Yapay Zekâ Modeli ve Performansı
 
 ### 🔍 Kullanılan Algoritmalar
-Projemizde toplam **6 algoritma test edildi**:
-- Gradient Boosting
-- AdaBoost
-- Logistic Regression
-- SVM (Support Vector Machines)
-- Decision Tree
-- **K-Nearest Neighbors (KNN)** – 💯 EN BAŞARILI MODEL
+
+- Gradient Boosting  
+- AdaBoost  
+- Logistic Regression  
+- SVM  
+- Decision Tree  
+- **K-Nearest Neighbors (KNN)** ✅ En başarılı model
 
 ### 📈 KNN Modeli Performansı
-- **Doğruluk (Accuracy):** %98
-- **Precision:** %96
-- **Recall:** %98
-- **F1 Skoru:** %97
 
-Modelin eğitimi için 12.000+ satırlık etiketli koku verisi, `Astroit_hackathon_ai_model/` dizininde yer almaktadır. Veri ön işleme, scaler ayarları, test/tren split’leri ve eğitim notebook’ları da klasör içinde paylaşılmıştır.
+- **Doğruluk:** %98  
+- **Precision:** %96  
+- **Recall:** %98  
+- **F1 Skoru:** %97  
+
+Veri seti: 12.000+ etiketli satır  
+Dizin: `Astroit_hackathon_ai_model/`
 
 ---
 
 ## 🗺️ Gerçekleştirilen Kullanım Senaryoları
 
 ### #1 🔥 Orman Yangını Öncesi Risk Tespiti
-📍 Muğla – Fethiye bölgesinde test edildi  
-🔥 VOC emisyonundaki artışla yangın öncesi anomaliler tespit edildi  
-📉 Yangın başlamadan 45 dakika önce eşik üstü değer alındı  
+- **Lokasyon:** Muğla – Fethiye  
+- Yangın öncesi VOC anomalisi  
+- **Uyarı süresi:** 45 dakika önce
 
 ### #2 🐝 Arıcılık Uyum Skorları
-📍 Artvin, Ordu, Mersin  
-🌸 Bitki örtüsündeki doğal koku varyasyonları analiz edildi  
-📈 Flora ve çiçek çeşitliliği %92 uyumla haritalandı  
-🧭 Arıcılar için en uygun 5 yeni lokasyon saptandı
+- **Lokasyon:** Artvin, Ordu, Mersin  
+- Flora analizleri, %92 eşleşme  
+- 5 yeni yatırım lokasyonu önerildi
 
 ### #3 🛢️ Petrol ve Gaz Sızıntısı İzleme
-📍 İzmit Körfezi ve Mersin Limanı  
-⛽ Benzin + VOC sızıntıları, deniz kıyısına yayılan hidrokarbonlar tespit edildi  
-🌊 Haritada sızıntı izi görselleştirildi, belediyeye sunuldu
+- **Lokasyon:** İzmit Körfezi, Mersin Limanı  
+- Deniz kıyısında hidrokarbon sızıntısı tespiti
 
-### #4 🌽 Tarımsal Zararlı ve Mantari İzleme
-📍 Şanlıurfa domates tarlası  
-🦠 Toprak üstü gaz dağılımında mantar risk sinyali %78 başarıyla yakalandı  
-⏱️ 3 gün önceden uyarı verildi, verim kaybı önlendi
+### #4 🌽 Tarımsal Zararlı ve Mantar İzleme
+- **Lokasyon:** Şanlıurfa domates tarlası  
+- %78 başarı oranıyla mantar sinyali
 
 ### #5 🏭 Sanayi Emisyon Uygunluk Raporu
-📍 Adana OSB, Manisa OSB  
-🌫️ Endüstriyel gaz emisyonları tespit edilip kentsel yerleşimlere etkisi modelledi  
-📊 %87’lik eşik üstü alanlar belirlenip yatırım için önlem raporu sunuldu
+- **Lokasyon:** Adana OSB, Manisa OSB  
+- %87 eşik üstü alanlar belirlendi
 
 ---
-📦 Proje Dosya Mimarisi
 
-Astroit_hackathon_ai_model:
+## 📦 Projenin Dosya Mimarisi
 
-train.ipynb: 🤖 Yapay zeka model eğitimi için kullanılan Jupyter Notebook dosyası
+### `Astroit_hackathon_ai_model/`
 
-prepare_dataset.ipynb: 📊 Veri ön işleme ve formatlama adımları
+- `train.ipynb`: 🤖 Yapay zeka model eğitimi  
+- `prepare_dataset.ipynb`: 📊 Veri ön işleme  
+- `smell_model.pkl`: 🧠 Eğitilmiş model  
+- `sensor_data.csv`: 📈 Sensör verisi  
+- `scaler.pkl`, `knn_classifier.pkl`: ⚙️ Yardımcı bileşenler
 
-smell_model.pkl: 🧠 Eğitilmiş koku sınıflandırma modeli
+### `Smell_Inspector_Donanim/Smell_Annotator_SW/`
 
-sensor_data.csv: 📈 Sensörlerden alınan ham verilerin işlenmiş hali
+- 📝 Etiketleme yazılımı  
+- 💻 PyCharm entegrasyonu
 
-scaler.pkl / knn_classifier.pkl: ⚙️ Modelin yardımcı bileşenleri (ölçekleyici ve sınıflandırıcı)
+### `astroist_on/src/`
 
-Smell_Inspector_Donanim:
+- `altinmadeneri.json`: 🏅 Altın madeni verisi  
+- `komurmadenveri.json`: 🪨 Kömür madeni verisi  
+- `angular.json`: ⚛️ Frontend ayarları  
+- `turkey-map.svg`: 🗺️ SVG Türkiye haritası
 
-Smell_Annotator_SW: 📝 Etiketlenmiş koku verileri, Python tabanlı işaretleme yazılımı
+### `backend/`
 
-PyCharm: 💻 Sensör verilerinin koda dönüştürülüp işaretlendiği ortam
+- `Dockerfile`: 🐳 Deployment  
+- `pom.xml`: ☕ Spring Boot bağımlılıkları  
+- `system.properties`: 🔧 Render ayarları
 
-astroist_on/src:
+---
 
-altinmadeneri.json: 🏅 Altın madeni lokasyon verileri
+## 💰 Yatırımcı Kazanımları
 
-komurmadenveri.json: 🪨 Kömür sahalarına ait il/ilçe bazlı coğrafi veri
+- 🗺️ Stratejik yatırım haritası  
+- 🌿 Çevre dostu risk modelleme  
+- 🤖 Yapay zekâ ile karar destek  
+- 📘 ESG uyumlu çevresel raporlama  
+- ⚖️ Tarım ve sanayi dengesi için rehberlik  
+- 🏭 OSB’ler için emisyon ücretlendirme
 
-angular.json: ⚛️ Angular frontend yapılandırma ayarları
+---
 
-turkey-map.svg: 🗺️ SVG formatında Türkiye haritası – katmanlı gösterim için kullanılır
+## 🌍 Sürdürülebilirlik Uyumu
 
-astroist_on/backend:
+- **SDG 11:** Sürdürülebilir şehirler  
+- **SDG 9:** Sanayi, yenilik ve altyapı  
+- **SDG 13:** İklim eylemi  
+- **SDG 12:** Sorumlu üretim/tüketim  
+- **VOC Karbon Takibi**: Aktif  
 
-Dockerfile: 🐳 Projeyi container ortamında deploy etmek için yapılandırma
+---
 
-pom.xml: ☕ Java Spring Boot bağımlılık yönetimi
+## 🧪 Teknolojik Yenilikler
 
-system.properties: 🔧 Render ayarları ve sistem dosyaları
+- 🚀 64-kanallı dijital koku verisi ile yatırım haritası  
+- 📍 GPS destekli VOC etiketleme  
+- 🔬 Çoklu sensör dizilimi  
+- 💻 Web arayüzü ile anlık görselleştirme  
+- 🧠 AI tabanlı koku tanıma
+
+---
+
+## 🤝 Önerilen Kamu Ortaklıkları
+
+- 🏛️ T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı  
+- 📊 TÜİK  
+- 🚨 AFAD  
+- 🌲 Orman Genel Müdürlüğü  
+- 🏙️ Pilot belediyeler (Şanlıurfa, Adana, Artvin)
+
+---
+
+## 💼 Olası Ticari Gelir Modelleri
+
+### **B2G**  
+- 🧾 Belediyelere lisanslı karar destek platformu  
+- 🏗️ Kamu ihalelerine VOC analiz modülü
+
+### **B2B**  
+- 🏭 OSB’lere emisyon danışmanlığı  
+- 🧴 Gıda, parfüm, tarım sektörüne özel sistem
+
+### **B2C**  
+- 📱 Mobil uygulama ile bireysel çevre bilinci  
+- 🔐 Freemium/Premium modeli
+
+---
+
+## 🗺️ Yol Haritası
+
+### Kısa Vade  
+- 📊 Kullanıcı paneli  
+- 📚 Yeni 10.000+ koku verisi
+
+### Orta Vade  
+- 🔗 Belediye API entegrasyonu  
+- 🌐 Açık veri portalı
+
+### Uzun Vade  
+- 🇪🇺 Horizon AB projeleri  
+- 🛠️ SmellControl cihazı ihracatı  
+- 🎤 CES 2026 Las Vegas lansmanı
