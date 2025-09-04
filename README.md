@@ -7,6 +7,13 @@
 **Takım Adı:** Astrosit  
 **Takım Üyeleri:** Yasin Karaca, Nazlıcan Atlı  
 **Teknoloji Alanları:** Nanohibrit sensör teknolojisi, yapay zekâ, büyük veri, çevresel yatırım analizleri, coğrafi bilgi sistemleri, veri görselleştirme
+## 🧑‍🤝‍🧑 Takım Fotoğrafı
+
+![Takım Fotoğrafı](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/team.jpeg?raw=true)
+
+*Açıklama:* Astro­sit ekibi – Yasin Karaca ve Nazlıcan Atlı’nın proje çalışmaları sırasında çekilmiş bir karesi.
+
+---
 
 ---
 
@@ -265,7 +272,8 @@ Dizin: `Astroit_hackathon_ai_model/`
 ## 🤝 Önerilen Kamu Ortaklıkları
 
 - 🏛️ T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı  
-- 📊 TÜİK  
+- 📊 TÜİK
+![TÜİK Logo](https://github.com/yasinkrc/Astrosit_teknofest_hackathon_cevre_sehircilik_iklim_degisikligi_bakanligi/blob/main/Astrosit_images/tuik-logo.jpg?raw=true)
 - 🚨 AFAD  
 - 🌲 Orman Genel Müdürlüğü  
 - 🏙️ Pilot belediyeler (Şanlıurfa, Adana, Artvin)
